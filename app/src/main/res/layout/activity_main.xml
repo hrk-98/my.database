@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_margin="10dp">
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           app:cardBackgroundColor="#C6C4C4"
+           app:cardCornerRadius="10dp"
+           android:layout_margin="5dp">
+
+           <EditText
+               android:id="@+id/id1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="16dp"
+               android:hint="Enter ID"/>
+
+       </androidx.cardview.widget.CardView>
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           app:cardBackgroundColor="#C6C4C4"
+           app:cardCornerRadius="10dp"
+           android:layout_margin="5dp">
+
+           <EditText
+               android:id="@+id/name1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="16dp"
+               android:hint="Enter Name"/>
+
+       </androidx.cardview.widget.CardView>
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           app:cardBackgroundColor="#C6C4C4"
+           app:cardCornerRadius="10dp"
+           android:layout_margin="5dp">
+
+           <EditText
+               android:id="@+id/surname1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="16dp"
+               android:hint="Enter Surname"/>
+
+       </androidx.cardview.widget.CardView>
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           app:cardBackgroundColor="#C6C4C4"
+           app:cardCornerRadius="10dp"
+           android:layout_margin="5dp">
+
+           <EditText
+               android:id="@+id/std1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="16dp"
+               android:hint="Enter std"/>
+
+       </androidx.cardview.widget.CardView>
+
+
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/insert"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:text="insert"/>
+
+                <Button
+                    android:id="@+id/upgrad"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/black"
+                    android:text="upgrad"/>
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/black"
+                android:text="delete"/>
+
+            <Button
+                android:id="@+id/retrive"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:text="retrive"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="#C6C4C4">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>
